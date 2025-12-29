@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "347867110664",
+    "project_id": "facebook-f9cae",
+    "storage_bucket": "facebook-f9cae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347867110664:android:8d1c202e52cb676214e0bd",
+        "android_client_info": {
+          "package_name": "com.example.facebook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9BWF5AJXsW6XSWQHBOZi_DMLf6XaZQho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
