@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'notifications_page.dart';
+import 'friends_page.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -76,9 +78,30 @@ class _HomeState extends State<Home> {
                 children: const [
                   Icon(Icons.home, color: Colors.blue, size: 28),
                   Icon(Icons.ondemand_video, color: Colors.grey),
-                  Icon(Icons.people, color: Colors.grey),
+                IconButton(
+                 icon: const Icon(Icons.people, color: Colors.grey),
+                    onPressed: () {
+                   Navigator.push(
+                     context,
+                   MaterialPageRoute(
+                   builder: (context) => const FriendsPage(),
+      ),
+    );
+  },
+),
                   Icon(Icons.store, color: Colors.grey),
-                  Icon(Icons.notifications, color: Colors.grey),
+                 IconButton(
+  icon: const Icon(Icons.notifications, color: Colors.grey),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const NotificationsPage(),
+      ),
+    );
+  },
+),
+
                 ],
               ),
             ),
@@ -214,3 +237,4 @@ class _HomeState extends State<Home> {
     );
   }
 }
+
